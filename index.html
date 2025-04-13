@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaskFlow - Gestor de Tareas</title>
-    <style>
-        :root {
-            --primary: #4361ee;       /* Azul vibrante */
-            --secondary: #3f37c9;    /* Azul oscuro */
-            --background: #f8f9fa;   /* Fondo claro */
-            --card: #ffffff;         /* Blanco */
-            --text: #212529;        /* Texto oscuro */
-            --border: #dee2e6;      /* Borde gris */
-            --hover: #e9ecef;       /* Hover gris claro */
-            --completed: #adb5bd;   /* Texto completado */
-            --danger: #ef233c;      /* Rojo para eliminar */
-            --success: #4cc9f0;    /* Verde azulado */
-        }
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mis Tareas del Día</h1>
+        <div class="input-group">
+            <input id="nuevaTarea" type="text" placeholder="Escribe una tarea..." autofocus>
+            <button id="agregarBtn">Agregar</button>
+        </div>
+        <ul id="listaTareas"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
 
         body {
             font-family: 'Segoe UI', system-ui, sans-serif;
